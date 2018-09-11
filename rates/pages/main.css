@@ -1,8 +1,8 @@
 body{
-    display: flex;
+/*    display: flex;
     flex-direction: column;
       align-items: center;
-    margin: 0;
+    margin: 0;*/
     font-family: 'Open Sans', sans-serif;
 }
 img{
@@ -12,12 +12,15 @@ button{
   margin-right: 16px;
 }
 
-
-.input-group{
-  width: 700px;
+.text-center {
+  align: center;
 }
+
+/*.input-group{
+  width: 700px;
+}*/
 .input-group-text{
-  width:130px;
+  width: 142px;
 }
 
 .stars-container {
