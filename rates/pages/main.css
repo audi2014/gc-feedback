@@ -11,6 +11,9 @@ img{
 button{
   margin-right: 16px;
 }
+h5 {
+  font-size: 1.2rem;
+}
 
 .text-center {
   align: center;
