@@ -12,6 +12,37 @@ class Rate {
 		$q = $pdo->prepare("INSERT INTO `rate` (`contact`, `description`, `rate`, `date`) VALUES (?,?,?,?)");
 		$q->execute([$contact, $description, $rate,$date]);
 	}
-
-	//INSERT INTO `gc_statistic`.`TestTable` (`id`, `contact`, `description`, `rate`, `date`) VALUES (NULL, 'sdfsdfds', 'sdfsdfds', '3', '2018-09-13 00:00:00');
 }
+/*
+--
+-- Table structure for table `rate`
+--
+
+CREATE TABLE IF NOT EXISTS `rate` (
+  `id` int(11) NOT NULL,
+  `contact` varchar(256) NOT NULL DEFAULT '',
+  `description` varchar(256) NOT NULL DEFAULT '',
+  `rate` int(11) NOT NULL DEFAULT '0',
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `rate`
+--
+ALTER TABLE `rate`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `rate`
+--
+ALTER TABLE `rate`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+*/
